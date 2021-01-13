@@ -27,9 +27,8 @@ namespace NUnitTestProject1
             CommonMethods.click(driver, "//span[contains(text(),'Hotels')]", "Xpath");
 
             CommonMethods.EnterText(driver, "downshift-1-input", "Ooty", "Id");
-            CommonMethods.EnterText(driver, "downshift-1-input", Keys.Enter, "Id");
             CommonMethods.EnterText(driver, "downshift-1-input", Keys.ArrowDown, "Id");
-            CommonMethods.EnterText(driver, "downshift-1-input", Keys.Enter, "Id");
+            CommonMethods.EnterText(driver, "downshift-1-input", Keys.Return, "Id");
 
 
             // enter the check in date
