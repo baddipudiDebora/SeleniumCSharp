@@ -11,10 +11,12 @@ namespace NUnitTestProject1
     {
         private IWebDriver driver;
         // constructor of Page Class
+
         public LandingPage(IWebDriver driver)
         {
-            this.driver= driver;           
+            this.driver = driver;
         }
+
         // WebElements inilized without page factory
         private IWebElement Hotelslink => driver.FindElement(By.XPath("//span[contains(text(),'Hotels')]"));
    

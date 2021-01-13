@@ -9,7 +9,7 @@ namespace NUnitTestProject1
 {
     public class Tests
     {
-       
+         
         [SetUp]
         public void Setup()
         {
@@ -20,29 +20,18 @@ namespace NUnitTestProject1
             PropertiesCollection.driver.Manage().Window.Maximize();
             // setting implicit wait
             PropertiesCollection.driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(20);
+            
         }
 
         [Test]
         public void Test1()
         {
-            CommonMethods.click("//span[contains(text(),'Hotels')]", PropertyType.Xpath);
+            LandingPage landingpageObj = new LandingPage(PropertiesCollection.driver);
+            landingpageObj.clickOnHotels();
 
-            CommonMethods.EnterText("downshift-1-input", "Ooty", PropertyType.Id);
-            System.Threading.Thread.Sleep(1000);
-            CommonMethods.EnterText("downshift-1-input", Keys.ArrowDown, PropertyType.Id);
-            CommonMethods.EnterText("downshift-1-input", Keys.Return, PropertyType.Id);
+            HotelSearchPage hotelsearchpageobj = new HotelSearchPage(PropertiesCollection.driver);
+            hotelsearchpageobj.fillHotelDetails("Ooty");
 
-
-            // enter the check in date
-            CommonMethods.click("//div[contains(text(),'Check-in')]",PropertyType.Xpath);
-            CommonMethods.click("// span[contains(text(),'29')]", PropertyType.Xpath);
-           
-
-          /* // enter the check in date
-            CommonMethods.click("//div[contains(text(),'Check-out')]", PropertyType.Xpath);
-            System.Threading.Thread.Sleep(2000);
-            CommonMethods.click("// span[contains(text(),'30')]", PropertyType.Xpath);
-          */
 
         }
         [TearDown]
