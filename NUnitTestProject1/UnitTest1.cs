@@ -25,23 +25,24 @@ namespace NUnitTestProject1
         [Test]
         public void Test1()
         {
-            CommonMethods.click("//span[contains(text(),'Hotels')]", "Xpath");
+            CommonMethods.click("//span[contains(text(),'Hotels')]", PropertyType.Xpath);
 
-            CommonMethods.EnterText("downshift-1-input", "Ooty", "Id");
+            CommonMethods.EnterText("downshift-1-input", "Ooty", PropertyType.Id);
             System.Threading.Thread.Sleep(1000);
-            CommonMethods.EnterText("downshift-1-input", Keys.ArrowDown, "Id");
-            CommonMethods.EnterText("downshift-1-input", Keys.Return, "Id");
+            CommonMethods.EnterText("downshift-1-input", Keys.ArrowDown, PropertyType.Id);
+            CommonMethods.EnterText("downshift-1-input", Keys.Return, PropertyType.Id);
 
 
             // enter the check in date
-            IWebElement checkinDate = PropertiesCollection.driver.FindElement(By.XPath("//div[contains(text(),'Check-in')]"));
-            checkinDate.Click();
-            PropertiesCollection.driver.FindElement(By.XPath("// span[contains(text(),'29')]")).Click();
+            CommonMethods.click("//div[contains(text(),'Check-in')]",PropertyType.Xpath);
+            CommonMethods.click("// span[contains(text(),'29')]", PropertyType.Xpath);
+           
 
-            // enter the check out date
-            PropertiesCollection.driver.FindElement(By.XPath("//div[contains(text(),'Check-out')]")).Click();
-            PropertiesCollection.driver.FindElement(By.XPath("// span[contains(text(),'30')]")).Click();
-
+          /* // enter the check in date
+            CommonMethods.click("//div[contains(text(),'Check-out')]", PropertyType.Xpath);
+            System.Threading.Thread.Sleep(2000);
+            CommonMethods.click("// span[contains(text(),'30')]", PropertyType.Xpath);
+          */
 
         }
         [TearDown]
