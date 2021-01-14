@@ -5,7 +5,7 @@ using System.Text;
 
 namespace NUnitTestProject1
 {
-    enum PropertyType
+    public enum PropertyType
     {
         Id,
         Name,
@@ -15,7 +15,7 @@ namespace NUnitTestProject1
         Xpath
     }
 
-    class PropertiesCollection
+    public class PropertiesCollection
     {
         public static IWebDriver driver { get; set; }
       

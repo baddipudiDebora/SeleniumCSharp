@@ -7,7 +7,7 @@ using OpenQA.Selenium.Support.UI;
 using SeleniumExtras.PageObjects;
 namespace NUnitTestProject1
 {
-    class LandingPage
+    public class LandingPage
     {
         private IWebDriver driver;
         // constructor of Page Class

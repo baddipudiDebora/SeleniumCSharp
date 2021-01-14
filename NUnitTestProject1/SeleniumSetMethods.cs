@@ -7,7 +7,7 @@ using OpenQA.Selenium.Support.UI;
 
 namespace NUnitTestProject1
 {
-    class SeleniumSetMethods
+   public class SeleniumSetMethods
     {
         // Enter text
         public static void EnterText( string element , string value, PropertyType elementType)
@@ -28,7 +28,7 @@ namespace NUnitTestProject1
             {
                  PropertiesCollection.driver.FindElement(By.XPath(element)).SendKeys(value);
             }
-            
+      
         }
         // click on button , link, radiobutton
         public static void click( string element, PropertyType elementType)

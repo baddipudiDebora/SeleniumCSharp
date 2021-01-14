@@ -2,11 +2,14 @@ C:\Users\Deborah\source\repos\NUnitTestProject1\NUnitTestProject1\bin\Debug\netc
 C:\Users\Deborah\source\repos\NUnitTestProject1\NUnitTestProject1\bin\Debug\netcoreapp3.1\NUnit3.TestAdapter.pdb
 C:\Users\Deborah\source\repos\NUnitTestProject1\NUnitTestProject1\bin\Debug\netcoreapp3.1\nunit.engine.dll
 C:\Users\Deborah\source\repos\NUnitTestProject1\NUnitTestProject1\bin\Debug\netcoreapp3.1\nunit.engine.api.dll
+C:\Users\Deborah\source\repos\NUnitTestProject1\NUnitTestProject1\bin\Debug\netcoreapp3.1\NUnitTestProject1.exe
 C:\Users\Deborah\source\repos\NUnitTestProject1\NUnitTestProject1\bin\Debug\netcoreapp3.1\NUnitTestProject1.deps.json
 C:\Users\Deborah\source\repos\NUnitTestProject1\NUnitTestProject1\bin\Debug\netcoreapp3.1\NUnitTestProject1.runtimeconfig.json
 C:\Users\Deborah\source\repos\NUnitTestProject1\NUnitTestProject1\bin\Debug\netcoreapp3.1\NUnitTestProject1.runtimeconfig.dev.json
 C:\Users\Deborah\source\repos\NUnitTestProject1\NUnitTestProject1\bin\Debug\netcoreapp3.1\NUnitTestProject1.dll
 C:\Users\Deborah\source\repos\NUnitTestProject1\NUnitTestProject1\bin\Debug\netcoreapp3.1\NUnitTestProject1.pdb
+C:\Users\Deborah\source\repos\NUnitTestProject1\NUnitTestProject1\bin\Debug\netcoreapp3.1\SeleniumExtras.PageObjects.dll
+C:\Users\Deborah\source\repos\NUnitTestProject1\NUnitTestProject1\bin\Debug\netcoreapp3.1\SeleniumExtras.WaitHelpers.dll
 C:\Users\Deborah\source\repos\NUnitTestProject1\NUnitTestProject1\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.CodeCoverage.Shim.dll
 C:\Users\Deborah\source\repos\NUnitTestProject1\NUnitTestProject1\bin\Debug\netcoreapp3.1\Microsoft.DotNet.InternalAbstractions.dll
 C:\Users\Deborah\source\repos\NUnitTestProject1\NUnitTestProject1\bin\Debug\netcoreapp3.1\Microsoft.TestPlatform.CoreUtilities.dll
@@ -20,6 +23,7 @@ C:\Users\Deborah\source\repos\NUnitTestProject1\NUnitTestProject1\bin\Debug\netc
 C:\Users\Deborah\source\repos\NUnitTestProject1\NUnitTestProject1\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 C:\Users\Deborah\source\repos\NUnitTestProject1\NUnitTestProject1\bin\Debug\netcoreapp3.1\NuGet.Frameworks.dll
 C:\Users\Deborah\source\repos\NUnitTestProject1\NUnitTestProject1\bin\Debug\netcoreapp3.1\nunit.framework.dll
+C:\Users\Deborah\source\repos\NUnitTestProject1\NUnitTestProject1\bin\Debug\netcoreapp3.1\WebDriver.Support.dll
 C:\Users\Deborah\source\repos\NUnitTestProject1\NUnitTestProject1\bin\Debug\netcoreapp3.1\WebDriver.dll
 C:\Users\Deborah\source\repos\NUnitTestProject1\NUnitTestProject1\bin\Debug\netcoreapp3.1\System.Xml.XPath.XmlDocument.dll
 C:\Users\Deborah\source\repos\NUnitTestProject1\NUnitTestProject1\bin\Debug\netcoreapp3.1\cs\Microsoft.TestPlatform.CoreUtilities.resources.dll
@@ -94,7 +98,3 @@ C:\Users\Deborah\source\repos\NUnitTestProject1\NUnitTestProject1\obj\Debug\netc
 C:\Users\Deborah\source\repos\NUnitTestProject1\NUnitTestProject1\obj\Debug\netcoreapp3.1\NUnitTestProject1.dll
 C:\Users\Deborah\source\repos\NUnitTestProject1\NUnitTestProject1\obj\Debug\netcoreapp3.1\NUnitTestProject1.pdb
 C:\Users\Deborah\source\repos\NUnitTestProject1\NUnitTestProject1\obj\Debug\netcoreapp3.1\NUnitTestProject1.genruntimeconfig.cache
-C:\Users\Deborah\source\repos\NUnitTestProject1\NUnitTestProject1\obj\Debug\netcoreapp3.1\NUnitTestProject1.csprojAssemblyReference.cache
-C:\Users\Deborah\source\repos\NUnitTestProject1\NUnitTestProject1\bin\Debug\netcoreapp3.1\SeleniumExtras.WaitHelpers.dll
-C:\Users\Deborah\source\repos\NUnitTestProject1\NUnitTestProject1\bin\Debug\netcoreapp3.1\SeleniumExtras.PageObjects.dll
-C:\Users\Deborah\source\repos\NUnitTestProject1\NUnitTestProject1\bin\Debug\netcoreapp3.1\WebDriver.Support.dll

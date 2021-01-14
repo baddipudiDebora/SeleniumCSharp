@@ -5,7 +5,7 @@ using System.Text;
 
 namespace NUnitTestProject1
 {
-    class HotelSearchPage
+    public class HotelSearchPage
     {
         private IWebDriver driver;
 

@@ -7,37 +7,16 @@ using SeleniumExtras.WaitHelpers;
 using Keys = OpenQA.Selenium.Keys;
 namespace NUnitTestProject1
 {
-    public class Tests
+    public class UnitTest1 : BaseClass
     {
-         
-        [SetUp]
-        public void Setup()
+       
+        static void   Main()
         {
-            PropertiesCollection.driver = new ChromeDriver();
-            //System.Environment.SetEnvironmentVariable("webdriver.chrome.driver", "C:/ Users / Deborah / Desktop / chromedriver.exe");
-            
-            PropertiesCollection.driver.Navigate().GoToUrl("https://www.goibibo.com/");
-            PropertiesCollection.driver.Manage().Window.Maximize();
-            // setting implicit wait
-            PropertiesCollection.driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(20);
-            
+
+         BaseClass.setUp();
+         BaseClass.landingpageObj.clickOnHotels();
+         BaseClass.hotelsearchpageobj.fillHotelDetails("Ooty");
         }
-
-        [Test]
-        public void Test1()
-        {
-            LandingPage landingpageObj = new LandingPage(PropertiesCollection.driver);
-            landingpageObj.clickOnHotels();
-
-            HotelSearchPage hotelsearchpageobj = new HotelSearchPage(PropertiesCollection.driver);
-            hotelsearchpageobj.fillHotelDetails("Ooty");
-
-
-        }
-        [TearDown]
-        public void quit()
-        {
-            PropertiesCollection.driver.Quit();
-        }
+       
     }
 }
