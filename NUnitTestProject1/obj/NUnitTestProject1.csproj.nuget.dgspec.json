@@ -48,6 +48,22 @@
               "target": "Package",
               "version": "[3.11.0, )"
             },
+            "ExcelDataReader-OptionalStreams": {
+              "target": "Package",
+              "version": "[3.4.1, )"
+            },
+            "ExcelDataReader.DataSet": {
+              "target": "Package",
+              "version": "[3.6.0, )"
+            },
+            "ExportDataToExcel_SSG.ExportDataTableToExcel": {
+              "target": "Package",
+              "version": "[1.0.2, )"
+            },
+            "Microsoft.CSharp": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[16.5.0, )"
@@ -71,6 +87,26 @@
             "Selenium.WebDriver.ChromeDriver": {
               "target": "Package",
               "version": "[87.0.4280.8800, )"
+            },
+            "Stripe.net": {
+              "target": "Package",
+              "version": "[39.32.0, )"
+            },
+            "System.Data.DataSetExtensions": {
+              "target": "Package",
+              "version": "[4.6.0-preview3.19128.7, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.2, )"
+            },
+            "System.IO": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "System.Xml.ReaderWriter": {
+              "target": "Package",
+              "version": "[4.3.1, )"
             }
           },
           "imports": [

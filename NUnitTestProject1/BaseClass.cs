@@ -10,23 +10,27 @@ using Keys = OpenQA.Selenium.Keys;
 
 namespace NUnitTestProject1
 {
-   public class BaseClass
+    [TestFixture]
+    public class BaseClass
     {
        public static LandingPage landingpageObj;
-       public static  HotelSearchPage hotelsearchpageobj;
-    public static void  setUp()
-        
-        {
-   
-        PropertiesCollection.driver = new ChromeDriver();
+       public  static HotelSearchPage hotelsearchpageobj;
+        [OneTimeSetUp]
+        public  void  setUpTest()   {
+         PropertiesCollection.driver = new ChromeDriver();
         System.Environment.SetEnvironmentVariable("webdriver.chrome.driver", "C:/ Users / Deborah / Desktop / chromedriver.exe");
-
-        PropertiesCollection.driver.Navigate().GoToUrl("https://www.goibibo.com/");
-        PropertiesCollection.driver.Manage().Window.Maximize();
+         PropertiesCollection.driver.Navigate().GoToUrl("https://www.goibibo.com/");
+            Console.WriteLine("Hi");
+            PropertiesCollection.driver.Manage().Window.Maximize();
             // setting implicit wait
-            PropertiesCollection.driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(20);
-            landingpageObj = new LandingPage(PropertiesCollection.driver);
+         //   PropertiesCollection.driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(20);
+             landingpageObj = new LandingPage(PropertiesCollection.driver);
             hotelsearchpageobj = new HotelSearchPage(PropertiesCollection.driver);
+        }
+        [OneTimeTearDown]
+        public  void tearDown()
+        {
+            PropertiesCollection.driver.Quit();
         }
     }
 }

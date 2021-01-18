@@ -18,11 +18,11 @@ namespace NUnitTestProject1
         }
 
         // WebElements inilized without page factory
-        private IWebElement Hotelslink => driver.FindElement(By.XPath("//span[contains(text(),'Hotels')]"));
+        private  IWebElement Hotelslink => driver.FindElement(By.XPath("//span[contains(text(),'Hotels')]"));
    
 
         // method to click on the Hotels LInk
-        public void clickOnHotels()
+        public  void clickOnHotels()
         {
             Hotelslink.Click();
         }

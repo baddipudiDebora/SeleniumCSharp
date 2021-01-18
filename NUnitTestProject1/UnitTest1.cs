@@ -9,14 +9,12 @@ namespace NUnitTestProject1
 {
     public class UnitTest1 : BaseClass
     {
-       
-        static void   Main()
+        [Test]
+        public static void myTest()
         {
-
-         BaseClass.setUp();
-         BaseClass.landingpageObj.clickOnHotels();
-         BaseClass.hotelsearchpageobj.fillHotelDetails("Ooty");
+            BaseClass.landingpageObj.clickOnHotels();
+            BaseClass.hotelsearchpageobj.fillHotelDetails("Ooty");
         }
-       
+
     }
 }
