@@ -10,68 +10,68 @@ namespace NUnitTestProject1
    public class SeleniumSetMethods
     {
         // Enter text
-        public static void EnterText( string element , string value, PropertyType elementType)
+        public static void EnterText( IWebElement element , string value, PropertyType elementType)
         {
             if(elementType == PropertyType.Id)
             {
-                PropertiesCollection.driver.FindElement(By.Id(element)).SendKeys(value);
+                element.SendKeys(value);
             }
             if (elementType == PropertyType.CssName)
             {
-                 PropertiesCollection.driver.FindElement(By.CssSelector(element)).SendKeys(value);
+                 element.SendKeys(value);
             }
             if (elementType == PropertyType.Name)
             {
-                 PropertiesCollection.driver.FindElement(By.Name(element)).SendKeys(value);
+                 element.SendKeys(value);
             }
             if (elementType == PropertyType.Xpath)
             {
-                 PropertiesCollection.driver.FindElement(By.XPath(element)).SendKeys(value);
+                 element.SendKeys(value);
             }
       
         }
         // click on button , link, radiobutton
-        public static void click( string element, PropertyType elementType)
+        public static void click(IWebElement element, PropertyType elementType)
         {
             if (elementType == PropertyType.Id)
             {
-                 PropertiesCollection.driver.FindElement(By.Id(element)).Click();
+                 element.Click();
             }
             if (elementType == PropertyType.CssName)
             {
-                 PropertiesCollection.driver.FindElement(By.CssSelector(element)).Click();
+                element.Click();
             }
             if (elementType == PropertyType.Name)
             {
-                 PropertiesCollection.driver.FindElement(By.Name(element)).Click();
+                 element.Click();
             }
             if (elementType == PropertyType.Xpath)
             {
-                 PropertiesCollection.driver.FindElement(By.XPath(element)).Click();
+                 element.Click();
             }
             if (elementType == PropertyType.LinkText)
             {
-                 PropertiesCollection.driver.FindElement(By.LinkText(element)).Click();
+                 element.Click();
             }
         }
         // selecting value from Dropdown
-        public static void selectFromDropdown(string element, string value, PropertyType elementType)
+        public static void selectFromDropdown(IWebElement element, string value, PropertyType elementType)
         {
             if (elementType == PropertyType.Id)
             {
-                new SelectElement( PropertiesCollection.driver.FindElement(By.Id(element))).SelectByText(value);
+                new SelectElement(element).SelectByText(value);
             }
             if (elementType == PropertyType.CssName)
             {
-                new SelectElement( PropertiesCollection.driver.FindElement(By.CssSelector(element))).SelectByText(value);
+                new SelectElement(element).SelectByText(value);
             }
             if (elementType == PropertyType.Name)
             {
-                new SelectElement( PropertiesCollection.driver.FindElement(By.Name(element))).SelectByText(value);
+                new SelectElement(element).SelectByText(value);
             }
             if (elementType == PropertyType.Xpath)
             {
-                new SelectElement( PropertiesCollection.driver.FindElement(By.XPath(element))).SelectByText(value);
+                new SelectElement(element).SelectByText(value);
             }
            
         }
